@@ -50,7 +50,7 @@ class Song
     row = filename
     data = row.split("-")
     artist_name = data[0]
-    song_name = 
+    song_name = data[1].chomp
   end
   
   def self.create_from_filename(filename)
